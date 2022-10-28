@@ -8,7 +8,37 @@
     <script src="script.js" defer></script>
     <title>Curtain Reveal Menu | Practice</title>
 </head>
-<body>
+<body data-nav="false">
     <main></main>
+
+    <nav>
+        <div id="nav-links">
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Home</h2>
+                <img class="nav-link-img" src="resources/img/carnations-6292136.jpg">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Work</h2>
+                <img class="nav-link-img" src="resources/img/cat-7544821.jpg">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">About</h2>
+                <img class="nav-link-img" src="resources/img/city-6870803.jpg">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Contact</h2>
+                <img class="nav-link-img" src="resources/img/paris-7427636.jpg">
+            </a>
+            <a class="nav-link" href="#">
+                <h2 class="nav-link-label">Join Us</h2>
+                <img class="nav-link-img" src="resources/img/water-7456116.jpg">
+            </a>
+        </div>
+    </nav>
+    
+    <button id="nav-toggle" type="button" onclick="toggleNav()">
+        <i class="open fa-light fa-bars-staggered"></i>
+        <i class="close fa-light fa-xmark-large"></i>
+    </button>
 </body>
 </html>
