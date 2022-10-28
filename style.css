@@ -71,3 +71,6 @@ nav {
     margin-top: 0.75rem;
     object-fit: cover;
 }
+body[data-nav="true"] > nav > #nav-links {
+    transform: translateY(0%) scale(1);
+}
