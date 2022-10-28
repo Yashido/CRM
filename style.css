@@ -41,3 +41,33 @@ body[data-nav="true"] > main {
 #nav-toggle:active {
     transform: translateX(-50%) scale(0.96);
 }
+nav {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    overflow: hidden;
+}
+#nav-links {
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
+    padding: 0rem clamp(1rem, 2vw, 2rem);
+    transform: translateY(70%) scale(0.9);
+    transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+}
+#nav-links > .nav-link > .nav-link-label {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    margin: 0rem;
+    text-transform: uppercase;
+}
+#nav-links > .nav-link > .nav-link-img {
+    width: max(20vw, 400px);
+    aspect-ratio: 1.8 / 1;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+    object-fit: cover;
+}
